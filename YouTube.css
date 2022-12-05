@@ -1,0 +1,397 @@
+html
+{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.youtube_app
+{
+    /* border: red 1px solid; */
+    width: 100vw;
+    height: 100vh;
+}
+
+.header
+{
+    /* border: blue 1px solid; */
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    /* border: 1px red solid; */
+}
+
+.logo i:nth-child(1)
+{
+    margin-right: 20px;
+}
+
+.logo i:nth-child(2)
+{
+    color: red;
+    font-size: x-large;
+}
+
+.logo p
+{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.searching
+{
+    /* border: 1px red solid; */
+    display: flex;
+    align-items: center;
+}
+
+.searching input
+{
+    width: 500px;
+    height: 38px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid rgba(165, 165, 165, 0.932);
+}
+
+.searching button
+{
+    width: 40px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searching button:nth-child(2)
+{
+    margin-right: 10px;
+    width: 50px;
+    border: 1px solid rgba(165, 165, 165, 0.932);
+}
+
+.searching button:nth-child(3)
+{
+    border-radius: 50%;
+    border: none;
+}
+
+.searching i
+{
+    margin: auto;
+    font-size: large;
+}
+
+.liste_header
+{
+    /* border: 1px red solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 190px;
+}
+
+.liste_header button
+{
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url(Assiasss.png) no-repeat center center/cover;
+}
+
+/* .liste_header img
+{
+    width: 40px;
+    height: 40px;
+} */
+
+.main_one
+{
+    /* border: blue 1px solid; */
+    width: 100vw;
+    height: max-content;
+    display: flex;
+}
+
+.liste
+{
+    /* border: rgb(128, 0, 0) 1px solid; */
+    width: 17%;
+    height: max-content; 
+}
+
+.mini_liste
+{
+    /* border: black 1px solid; */
+    border-bottom: rgb(173, 173, 173) 1px solid;
+    width: 100%;
+    padding: 10px 5px;
+    height: fit-content;
+}
+
+.icon_name
+{
+    width: 100%;
+    height: 35px;
+    /* border: 1px lightseagreen dashed; */
+    display: flex;
+    align-items: center;
+}
+
+.icon_name i
+{
+    margin: 0 20px;
+}
+
+.icon_name p
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#liste_three .icon_name:nth-child(1) p
+{
+    margin-left: 20px;
+}
+
+#liste_four .icon_name:nth-child(1) p
+{
+    margin-left: 20px;
+}
+
+#liste_six .icon_name
+{
+    height: 60px;
+}
+
+#liste_six p
+{
+    font-weight: 800;
+    font-size: 12px;
+    color: rgb(80, 78, 78);
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+#liste_six .icon_name:nth-child(3)
+{
+    height: 35px;
+}
+
+#liste_six .icon_name:nth-child(3) p
+{
+    color: rgb(143, 142, 142);
+    font-size: 11px;
+}
+
+
+
+
+
+
+.categories_plus_videos
+{
+    /* border: green 1px solid; */
+    width: fit-content;
+    height: fit-content;
+}
+
+.categories
+{
+    /* border: black 1px solid; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories div
+{
+    /* border: red solid 1px; */
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories button
+{
+    height: 25px;
+    width: auto;
+    padding: 10px;
+    background-color: #e5e5e594;
+    border: 1px solid rgba(160, 160, 160, 0.486);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.videos
+{
+    /* border: rgb(30, 235, 11) 1px solid; */
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+    padding: 15px;
+    background-color: rgba(223, 221, 221, 0.301);
+}
+
+.video
+{
+    /* border: solid 1px red; */
+    width: 240px;
+    height: 200px;
+}
+
+.thumbnail
+{
+    /* border: solid 1px blue; */
+    width: 100%;
+    height: 60%;
+    background: url(thumbnail.PNG) no-repeat center center/cover;
+}
+
+.photo_plus_title
+{
+    /* border: solid 1px blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 23%;
+}
+
+.photo
+{
+    /* border: solid 1px black; */
+    border-radius: 50%;
+    width: 44px; /* 20% */
+    height: 44px;
+    cursor: pointer;
+    background: url(youtube.png) no-repeat center center/cover;
+}
+
+.title
+{
+    /* border: solid 1px green; */
+    width: 176px;
+    height: 46px; /* 23% */
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.channel
+{
+    height: 9%;
+    width: 80%;
+    margin-left: 49px;
+    font-size: 15px;
+    color: gray;
+    cursor: pointer;
+}
+
+.views_plus_duration
+{
+    height: 8%;
+    width: 80%;
+    margin-left: 49px;
+    font-size: 13px;
+    color: gray;
+}
+
+
+
+
+
+
+.shorts_container
+{
+    /* border: red 1px solid; */
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    background-color: rgba(223, 221, 221, 0.301);
+}
+
+#shorts_logo
+{
+    /* border: black 1px solid; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.short_logo img
+{
+    width: 20px;
+    height: 25px;
+}
+
+.short_name p
+{
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.shorts
+{
+    /* border: blue 1px solid; */
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 15px;
+    margin: auto;
+}
+
+.short
+{
+    /* border: black 1px solid; */
+    height: 300px;
+    width: 145px;
+}
+
+.pho_to
+{
+    background: url(short.PNG) no-repeat center center/cover;
+    width: 100%;
+    height: 87%;
+}
+
+
+
+
+
+
